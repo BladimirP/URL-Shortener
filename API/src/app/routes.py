@@ -1,6 +1,6 @@
 from . import schemas, handlers, database
 from fastapi import APIRouter, Depends, Request, HTTPException, status
-from fastapi.responses import RedirectResponse
+from fastapi.responses import RedirectResponse, HTMLResponse
 from sqlalchemy.orm import Session
 from typing import List
 import logging
@@ -89,6 +89,35 @@ async def read_url_path(path: str, request: Request, db: Session = Depends(datab
         response = handlers.get_url(db, path)
     except HTTPException as e:
         logger.error(f"GET ../{path}, FROM: {request.client.host}, STATUS: {e.status_code}")
+
+        if e.status_code == 419:
+            html_content = """
+            <html>
+                <head>
+                    <title>Error 419</title>
+                    <style>
+                        body {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            font-family: Arial, sans-serif;
+                            background-color: #f9f9f9;
+                        }
+                        .container {
+                            text-align: center;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <h1>Error 419 - Page Expired</h1>
+                        <p>Your link has expired and is no longer valid.</p>
+                    </div>
+                </body>
+            </html>
+            """
+            return HTMLResponse(content=html_content, status_code=419)
         raise e
     else:
         logger.info(f"GET ../{path}, FROM: {request.client.host}, STATUS: 200")
