@@ -1,0 +1,24 @@
+2025-03-29 20:05:25,017 - api_url_shortener - INFO - POST ../url, FROM: ::1, STATUS: 200
+2025-03-29 20:19:01,791 - api_url_shortener - INFO - POST ../url, FROM: ::1, STATUS: 200
+2025-03-29 20:20:56,205 - api_url_shortener - INFO - POST ../url, FROM: ::1, STATUS: 200
+2025-03-29 20:21:18,253 - api_url_shortener - INFO - POST ../url, FROM: ::1, STATUS: 200
+2025-03-29 20:26:56,781 - api_url_shortener - INFO - GET ../url/1, FROM: ::1, STATUS: 200
+2025-03-29 20:29:24,956 - api_url_shortener - INFO - GET ../url/2, FROM: ::1, STATUS: 200
+2025-03-29 20:29:26,539 - api_url_shortener - INFO - GET ../url/3, FROM: ::1, STATUS: 200
+2025-03-29 20:29:28,162 - api_url_shortener - INFO - GET ../url/4, FROM: ::1, STATUS: 200
+2025-03-29 20:33:08,008 - api_url_shortener - INFO - GET ../urls, FROM: ::1, STATUS: 200
+2025-03-29 20:37:00,126 - api_url_shortener - INFO - GET ../urls, FROM: ::1, STATUS: 200
+2025-03-29 20:50:03,654 - api_url_shortener - INFO - POST ../url, FROM: ::1, STATUS: 200
+2025-03-29 20:58:43,180 - api_url_shortener - INFO - GET ../Softonic-01a297fa, FROM: ::1, STATUS: 200
+2025-03-29 20:58:43,192 - api_url_shortener - ERROR - GET ../<app.models.URL object at 0x0000014192B323C0>, FROM: ::1, STATUS: 404
+2025-03-29 20:59:52,707 - api_url_shortener - INFO - GET ../Softonic-01a297fa, FROM: ::1, STATUS: 200
+2025-03-29 20:59:52,720 - api_url_shortener - ERROR - GET ../<app.models.URL object at 0x000002D5DEFB23C0>, FROM: ::1, STATUS: 404
+2025-03-29 21:01:17,472 - api_url_shortener - INFO - GET ../Softonic-01a297fa, FROM: ::1, STATUS: 200
+2025-03-29 21:01:17,476 - api_url_shortener - ERROR - GET ../<app.models.URL object at 0x000002D9E22A23C0>, FROM: ::1, STATUS: 404
+2025-03-29 21:05:52,367 - api_url_shortener - INFO - GET ../Softonic-01a297fa, FROM: ::1, STATUS: 200
+2025-03-29 21:06:37,798 - api_url_shortener - ERROR - GET ../Softonic-01a297f, FROM: ::1, STATUS: 404
+2025-03-29 21:15:09,577 - api_url_shortener - INFO - POST ../url, FROM: ::1, STATUS: 200
+2025-03-29 21:21:48,136 - api_url_shortener - ERROR - GET ../google-4211bc6f, FROM: ::1, STATUS: 419
+2025-03-29 21:22:01,500 - api_url_shortener - INFO - GET ../google-4211bc6e, FROM: ::1, STATUS: 200
+2025-03-29 21:30:11,349 - api_url_shortener - INFO - GET ../google-4211bc6e, FROM: ::1, STATUS: 200
+2025-03-29 21:30:23,983 - api_url_shortener - INFO - GET ../google-4211bc6e, FROM: ::1, STATUS: 200
