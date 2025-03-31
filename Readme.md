@@ -46,7 +46,7 @@ The beta version of this service is available for use at:
 
 URL access analytics are available at:
 
-👉 [http://146.83.216.176/443/urls](http://146.83.216.176/443/urls)
+👉 [http://146.83.216.176:443/urls](http://146.83.216.176:443/urls)
 
 More details about each visit are logged in the API, which records every request to shortened URLs.
 
