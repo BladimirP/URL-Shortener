@@ -28,12 +28,22 @@ function Home() {
   };
 
   const copyToClipboard = async () => {
+    if (!navigator.clipboard) {
+      console.error('Clipboard API not supported');
+      return;
+    }
+    if (!shortenedUrl) {
+      console.error('No URL to copy');
+      return;
+    }
     try {
       await navigator.clipboard.writeText(shortenedUrl);
+      console.log('Copied to clipboard:', shortenedUrl);
     } catch (err) {
       console.error('Failed to copy: ', err);
     }
   };
+  
 
   useEffect(() => { // Change UTC to Local Date
     if (expirationDate) {

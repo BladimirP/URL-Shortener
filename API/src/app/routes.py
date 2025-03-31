@@ -8,7 +8,7 @@ import logging
 ##################### LOGGING ####################
 logger = logging.getLogger("api_url_shortener")
 logger.setLevel(logging.INFO)
-file_handler = logging.FileHandler("./API/src/logs/log")
+file_handler = logging.FileHandler("./logs/log") # Para windows: ./API/src/logs/log         Para Linux: ./logs/log
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
